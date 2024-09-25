@@ -46,3 +46,8 @@ ul li::before {
     height: 100vh;           /* El cuerpo ocupa el 100% de la altura del viewport */
     margin: 0;  
 } 
+
+footer {
+    background-color: #e1e1e1; /* Color de fondo gris claro */
+    color: #333; /* Color de texto oscuro para un buen contraste */
+}
