@@ -1,7 +1,74 @@
-body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
+/* Configura el body y html para usar Flexbox en toda la página */
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
 }
+
+/* Contenedor principal que permite el scroll si el contenido es mayor que la pantalla */
+.container {
+  flex: 1;
+  padding-right: 20px;
+  overflow-y: auto; /* Permite el desplazamiento vertical */
+   
+}
+
+
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+}
+
+/* Fondo de tornado de cuadrados de colores claros */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  overflow: hidden;
+  background-color: #f0f0f0; /* Color de fondo base */
+}
+
+.background-squares {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -1;
+}
+
+/* Configuración de los cuadrados */
+.square {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: rgba(255, 255, 255, 0.8);
+  animation: square-move 20s linear infinite;
+  opacity: 0.8;
+  border-radius: 10px;
+}
+
+/* Animación de los cuadrados */
+@keyframes square-move {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  50% {
+    transform: translate(200px, 200px) rotate(180deg) scale(1.1);
+  }
+  100% {
+    transform: translate(-200px, -200px) rotate(360deg) scale(1);
+  }
+}
+
+
+
+
+
+
 
 h1, h2 {
   font-family: 'Georgia', serif;
@@ -39,15 +106,17 @@ ul li::before {
   content: "• ";
   color: #3498db;
 }
+
 .video-container {
-    display: flex;
-    justify-content: center; /* Centramos horizontalmente */
-    align-items: center;     /* Centramos verticalmente */
-    height: 100vh;           /* El cuerpo ocupa el 100% de la altura del viewport */
-    margin: 0;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
 } 
 
 footer {
-    background-color: #e1e1e1; /* Color de fondo gris claro */
-    color: #333; /* Color de texto oscuro para un buen contraste */
+  background-color: #e1e1e1;
+  color: #333;
+  padding: 15px 0;
 }
