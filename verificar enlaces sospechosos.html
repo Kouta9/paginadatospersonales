@@ -3,61 +3,73 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Artículo de Investigación</title>
+  <title>Seguridad en Enlaces</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="estilos.css">
+  <style>
+    body {
+      background: #222222;
+      color: #f0f0f0;
+      font-family: 'Courier New', Courier, monospace;
+    }
+    h1, h2, h3 {
+      color: #39ff14;
+      text-shadow: 2px 2px 5px rgba(0, 255, 0, 0.7);
+    }
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    li {
+      margin-bottom: 10px;
+    }
+    .tip {
+      background-color: #333333;
+      border: 1px solid #39ff14;
+      padding: 20px;
+      margin-top: 20px;
+    }
+    footer {
+      background-color: #111111;
+      color: #39ff14;
+      text-align: center;
+      padding: 15px;
+    }
+    .tip img {
+      width: 100%;
+      max-width: 400px;
+      margin-top: 15px;
+    }
+  </style>
 </head>
 <body>
-  <div class="background-squares">
-    <!-- Crea varios divs con la clase "square" para los cuadrados animados -->
-    <div class="square" style="top: 10%; left: 20%; background-color: #FFD700;"></div>
-    <div class="square" style="top: 30%; left: 50%; background-color: #FFB6C1;"></div>
-    <div class="square" style="top: 60%; left: 70%; background-color: #87CEFA;"></div>
-    <div class="square" style="top: 80%; left: 30%; background-color: #98FB98;"></div>
-    <div class="square" style="top: 40%; left: 80%; background-color: #FFA07A;"></div>
-    <!-- Puedes agregar más cuadrados con distintos colores y posiciones -->
-  </div>
-
+  <br><br><br>
   <div class="container">
-    <h1>¿Por qué es importante verificar enlaces sospechosos?</h1>
-        <p>Los enlaces sospechosos suelen ser utilizados en ataques de phishing para engañar a los usuarios y obtener sus datos personales, como contraseñas y datos bancarios. Verificar un enlace antes de hacer clic en él es fundamental para protegerte contra estas amenazas.</p>
-        
-        <h2>¿Cómo identificar un enlace sospechoso?</h2>
-        <ul>
-            <li><strong>Dominios extraños:</strong> Revisa que el enlace provenga de un dominio confiable y evita aquellos con nombres o caracteres inusuales.</li>
-            <li><strong>Errores ortográficos o gramaticales:</strong> Los enlaces de phishing suelen contener errores evidentes en el texto del mensaje o en el enlace.</li>
-            <li><strong>URL acortadas o enmascaradas:</strong> Algunos enlaces acortados pueden ocultar la dirección real; verifica antes de hacer clic.</li>
-        </ul>
-        
-        <div class="tip">
-            <h3>Consejos para verificar enlaces de forma segura</h3>
-            <ul>
-                <li>Pasa el cursor sobre el enlace para ver la URL completa antes de hacer clic.</li>
-                <li>Utiliza herramientas en línea para verificar enlaces, como <strong>VirusTotal</strong> o <strong>Google Safe Browsing</strong>, que ayudan a identificar posibles amenazas.</li>
-                <li>Si recibes un enlace sospechoso de un contacto, verifica con esa persona antes de abrirlo.</li>
-                <li>Asegúrate de que el sitio web usa <strong>HTTPS</strong> en la URL, especialmente para sitios de compras o donde introduces información personal.</li>
-            </ul>
-        </div>
-
-       
-
-
+    <h1>¡Cuidado con los Enlaces Maliciosos!</h1>
+    <p>Los enlaces sospechosos pueden robar tu información personal. ¡Verifica siempre antes de hacer clic!</p>
+    <br>
     
-    <div class="d-flex justify-content-center">
+    <img src="./6.jpg"  alt="Consejos de seguridad" style="float: right; width: 500px; box-shadow: 0 0 10px 5px rgba(0, 98, 255, 0.7);">
+    <h2>¿Cómo detectar enlaces peligrosos?</h2>
+    <ul>
+      <li><strong>Dominios extraños:</strong> Revisa el dominio cuidadosamente.</li>
+      <li><strong>Errores evidentes:</strong> Los enlaces de phishing suelen tener fallos en la ortografía.</li>
+      <li><strong>URLs acortadas:</strong> Verifica la dirección completa antes de hacer clic.</li>
+    </ul>
+    <br>
+    
+    <div class="tip">
+      <h3>Consejos para protegerte:</h3>
+      <ul>
+        <li>Revisa la URL al pasar el cursor.</li>
+        <li>Usa herramientas como <strong>VirusTotal</strong> para verificar enlaces.</li>
+        <li>Confirma con la persona si el enlace es sospechoso.</li>
+        <li>Asegúrate de que la URL tenga <strong>HTTPS</strong>.</li>
+      </ul>
     </div>
     
-      <br>
-      <br>
-      <br>
-      <br>
-
-
-      
-    <footer class="text-center py-3" >
-      <div class="container">
-        <p>&copy; 2024 Estudio sobre la seguridad de la información</p>
-        <p>Autores: Adrián Galicia, Axel Sánchez, Carolina Reyes, Enrique Ontiveros y Antonio Bruno</p>
-      </div>
+    <footer>
+      <p>&copy; 2024 Seguridad en la Red</p>
+      <p>Autores: Adrián, Axel, Carolina, Enrique, Antonio</p>
     </footer>
   </div>
 

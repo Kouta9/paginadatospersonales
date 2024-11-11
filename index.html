@@ -6,6 +6,120 @@
   <title>Artículo de Investigación</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="estilos.css">
+  <style>
+    /* Estilo para el enlace de "Consejos" */
+    .neon-link {
+      text-decoration: none; /* Elimina el subrayado */
+      color:black; /* Color del texto */
+      font-weight: bold; /* Hace el texto más destacado */
+      transition: all 0.3s ease; /* Suaviza la transición */
+    }
+
+    .neon-link:hover {
+      box-shadow: 0 0 20px 5px rgba(0, 255, 0, 0.8); /* Sombra de neón */
+      color: #0f0; /* Cambia el color del texto a verde neón */
+    }
+    
+    
+    
+    
+    .steampunk-link {
+      text-decoration: none; /* Elimina el subrayado */
+      color:black; /* Color del texto */
+      font-weight: bold; /* Hace el texto más destacado */
+      transition: all 0.3s ease; /* Suaviza la transición */
+      text-align: center;
+    }
+    
+    .steampunk-link:hover {
+      box-shadow: 0 0 20px 5px #c08e4d; /* Sombra de neón */
+      color: #c08e4d; /* Cambia el color del texto a verde neón */
+    }
+    
+    
+    
+    /* Estilo para el enlace de "3 retro futurismo" */
+    .retrofuturismo {
+      text-decoration: none; /* Elimina el subrayado */
+      color:black; /* Color del texto */
+      font-weight: bold; /* Hace el texto más destacado */
+      transition: all 0.3s ease; /* Suaviza la transición */
+    }
+
+    .retrofuturismo:hover {
+      box-shadow: 0 0 20px 5px #388282; /* Sombra de neón */
+      color: #00ffff; /* Cambia el color del texto a verde neón */
+    }
+    
+    
+    
+    
+    /* Estilo para el enlace de "4 Distopias" */
+    .Distopias {
+      text-decoration: none; /* Elimina el subrayado */
+      color:black; /* Color del texto */
+      font-weight: bold; /* Hace el texto más destacado */
+      transition: all 0.3s ease; /* Suaviza la transición */
+    }
+
+    .Distopias:hover {
+      box-shadow: 0 0 20px 5px rgba(255, 100, 100, 0.5); /* Sombra de neón */
+      color: #ff6666; /* Cambia el color del texto a verde neón */
+    }
+    
+    
+
+
+
+
+    /* Estilo para el enlace de "5 Postciberpunk" */
+    .Postciberpunk {
+      text-decoration: none; /* Elimina el subrayado */
+      color:black; /* Color del texto */
+      font-weight: bold; /* Hace el texto más destacado */
+      transition: all 0.3s ease; /* Suaviza la transición */
+    }
+
+    .Postciberpunk:hover {
+      box-shadow: 0 0 20px 5px #006c87; /* Sombra de neón */
+      color: #00ccff; /* Cambia el color del texto a verde neón */
+    }
+    
+    
+    
+    
+    /* Estilo para el enlace de "7 neon-rosa" */
+    .neon-rosa {
+      text-decoration: none; /* Elimina el subrayado */
+      color:black; /* Color del texto */
+      font-weight: bold; /* Hace el texto más destacado */
+      transition: all 0.3s ease; /* Suaviza la transición */
+    }
+
+    .neon-rosa:hover {
+      box-shadow: 0 0 20px 5px rgba(173, 2, 156, 0.7); /* Sombra de neón */
+      color: #ff00e6; /* Cambia el color del texto a verde neón */
+    }
+    
+    
+    
+    
+    
+    /* Estilo para el enlace de "7 neon-rosa" */
+    .herramientas {
+      text-decoration: none; /* Elimina el subrayado */
+      color:black; /* Color del texto */
+      font-weight: bold; /* Hace el texto más destacado */
+      transition: all 0.3s ease; /* Suaviza la transición */
+    }
+
+    .herramientas:hover {
+      box-shadow: 0 0 20px 5px #09876e; /* Sombra de neón */
+      color: #1abc9c; /* Cambia el color del texto a verde neón */
+    }
+    
+    
+  </style>
 </head>
 <body>
   <div class="background-squares">
@@ -18,61 +132,57 @@
     <!-- Puedes agregar más cuadrados con distintos colores y posiciones -->
   </div>
 
-  
-  
-  <div class="container">
-    <header class="text-center my-5">
-      <h1>SEGURIDAD DE LA INFORMACIÓN</h1>
-      <h5>INVESTIGACIÓN DEL TECNOLÓGICO NACIONAL DE MÉXICO CAMPUS MILPA ALTA 2</h5>
-      <p><strong>Publicado:</strong> 24 de septiembre de 2024</p>
-    </header>
+  <div class="container position-relative text-center">
+    <!-- Imagen en el lado izquierdo, más hacia el centro y abajo, además de más grande -->
+    <img src="./tec.png" class="position-absolute" style="width: 200px; height: auto; top: 14%; left: 15%; transform: translate(-50%, -50%);">
+    
+    <!-- Imagen en el lado derecho, también más hacia el centro y abajo, y más grande -->
+    <img src="./itma2.webp" class="position-absolute" style="width: 200px; height: auto; top: 14%; right: 15%; transform: translate(50%, -50%);">
 
+    </header>
+  
+    <br><br><br>
     <!-- Sección de Consejos -->
     <section id="consejos" class="mb-5">
       <h3>Consejos Para Evitar El Robo De Datos Personales</h3>
-      <!-- Aquí iría el contenido de los consejos -->
-      <p>Conoce nuestros consejos diarios para la proteccion de tu información personal</p>
-
+      <p>Conoce nuestros consejos diarios para la protección de tu información personal</p>
+    </section>
+    <br><br><br>
+  
     <!-- Sección de Entradas Diarias -->
     <section id="entradasDiarias" class="mb-5">
       <h3>Entradas Diarias</h3>
-      <div id="entries"></div>
+      <br><br><br>
+      <div class="botones-container">
+        <a href="Consejos.html" class="neon-link">1.- Consejos</a>
+        <a href="cambio_de_contraseñas_periodicamente.html" class="steampunk-link">2.- Cambio de Contraseñas Periódicamente</a>
+        <a href="Verificación en Dos Pasos.html" class="retrofuturismo">3.- Verificación en Dos Pasos</a>
+        <a href="contraseñas seguras y unicas.html" class="Distopias">4.- Contraseñas Seguras y Únicas</a>
+        <a href="configuracion de la privacidad.html" class="Postciberpunk">5.- Configuración de la Privacidad</a>
+        <a href="verificar enlaces sospechosos.html" class="neon-link">6.- Verificar Enlaces Sospechosos</a>
+        <a href="sitios web seguro.html" class="neon-rosa">7.- Sitios Web Seguro?</a>
+        <a href="herramientas para contraseñas.html" class="herramientas">8.- Herramientas para Contraseñas</a>
+    </div>
+    
     </section>
+  <br><br><br>
+  <footer class="text-center py-3">
+    <div class="container">
+      <p>&copy; 2024 Estudio sobre la seguridad de la información</p>
+      <p>Autores: Adrián Galicia, Axel Sánchez, Carolina Reyes, Enrique Ontiveros y Antonio Bruno</p>
+    </div>
+  </footer>
 
-    <br><br><br><br><br><br><br><br><br>
-
-    <!-- Footer -->
-    <footer class="text-center py-3" >
-      <div class="container">
-        <p>&copy; 2024 Estudio sobre la seguridad de la información</p>
-        <p>Autores: Adrián Galicia, Axel Sánchez, Carolina Reyes, Enrique Ontiveros y Antonio Bruno</p>
-      </div>
-    </footer>
+    
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 
-  <!-- Script para generar entradas diarias -->
-  <script>
-    // Array con las entradas diarias
-    const entries = [
-      { date: '1.- consejos', link: 'Consejos.html' },
-      { date: '2.- cambio de contraseñas periodicamente', link: 'cambio_de_contraseñas_periodicamente.html' },
-      { date: '3.- Verificación en Dos Pasos', link: 'Verificación en Dos Pasos.html' },
-      { date: '4.- contraseñas seguras y únicas', link: 'contraseñas seguras y unicas.html' },
-      { date: '5.- configuracion de la privacidad', link: 'configuracion de la privacidad.html' },
-      { date: '6.- verificar enlaces sospechosos', link: 'verificar enlaces sospechosos.html' },
-      { date: '7.- sitios web seguro?', link: 'sitios web seguro.html' },
-      { date: '8.- herramientas para contraseñas', link: 'herramientas para contraseñas.html' },
-      
-    ];
-
-    // Generar los enlaces de las entradas
     const entriesDiv = document.getElementById('entries');
     entries.forEach(entry => {
       const entryDiv = document.createElement('div');
-      entryDiv.className = 'entry';
-      entryDiv.innerHTML = `<a href="${entry.link}" class="btn btn-link">${entry.date}</a>`;
+      entryDiv.className = 'col-12 col-md-3 mb-3';
+      entryDiv.innerHTML = `<a href="${entry.link}" class="btn btn-outline-secondary w-100">${entry.date}</a>`;
       entriesDiv.appendChild(entryDiv);
     });
   </script>

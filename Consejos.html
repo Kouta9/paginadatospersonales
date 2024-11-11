@@ -3,67 +3,122 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Artículo de Investigación</title>
+  <title>Artículo de Investigación - Cyberpunk</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="estilos.css">
+  <style>
+    /* Fondo oscuro y tipografía de estilo cyberpunk */
+    body {
+      background-color: #0f0e17;
+      color: #a1a6af;
+      font-family: 'Courier New', Courier, monospace;
+    }
+    
+    /* Encabezado con estilo de neón */
+    header h1, header h5 {
+      color: #ff0090;
+      text-shadow: 0 0 5px #ff0090, 0 0 10px #ff0090, 0 0 20px #ff00ff, 0 0 40px #ff0090;
+    }
+
+    /* Efecto de neón para los textos importantes */
+    p strong, h3 {
+      color: #00ffe0;
+      text-shadow: 0 0 5px #00ffe0, 0 0 10px #00ffe0, 0 0 20px #00ffdd, 0 0 40px #00ffe0;
+    }
+    
+    /* Estilo para la sección de consejos */
+    #consejos p {
+      border-left: 5px solid #ff0090;
+      padding-left: 10px;
+      margin-bottom: 1rem;
+    }
+
+    /* Borde y neón para el video */
+    iframe {
+      border: 2px solid #ff0090;
+      box-shadow: 0 0 10px #ff0090, 0 0 20px #ff00ff, 0 0 30px #ff0090;
+      border-radius: 10px;
+    }
+
+    /* Enlaces con efecto neón */
+    a {
+      color: #00ffe0;
+      text-decoration: none;
+    }
+    a:hover {
+      color: #ff0090;
+      text-shadow: 0 0 5px #ff0090, 0 0 10px #ff0090;
+    }
+
+    /* Imagen con borde y sombra de neón */
+    .cyberpunk-image {
+      float: right;
+      margin: 0 0 10px 20px;
+      border: 2px solid #ff0090;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #ff0090, 0 0 20px #ff00ff, 0 0 30px #ff0090;
+      width: 250px;
+      height: auto;
+    }
+
+    /* Estilo para el footer */
+    footer {
+      color: #ff00ff;
+      background-color: #1a1b2f;
+      border-top: 2px solid #ff0090;
+      padding-top: 10px;
+      box-shadow: 0 0 10px #ff0090;
+    }
+
+     /* Estilos CSS para ajustar el tamaño y alineación */
+     .gif-left {
+      width: 100px; /* Ajusta el tamaño del GIF */
+      float: left;  /* Alinea el GIF a la izquierda */
+      margin-right: 20px; /* Añade espacio entre el GIF y el texto */
+    }
+  </style>
 </head>
 <body>
-  <div class="background-squares">
-    <!-- Crea varios divs con la clase "square" para los cuadrados animados -->
-    <div class="square" style="top: 10%; left: 20%; background-color: #FFD700;"></div>
-    <div class="square" style="top: 30%; left: 50%; background-color: #FFB6C1;"></div>
-    <div class="square" style="top: 60%; left: 70%; background-color: #87CEFA;"></div>
-    <div class="square" style="top: 80%; left: 30%; background-color: #98FB98;"></div>
-    <div class="square" style="top: 40%; left: 80%; background-color: #FFA07A;"></div>
-    <!-- Puedes agregar más cuadrados con distintos colores y posiciones -->
-  </div>
 
   <div class="container">
     <header class="text-center my-5">
-      <h1>SEGURIDAD DE LA INFORMACIóN</h1>
-      <h5>INVESTIGACION DEL TECNOLOGICO NACIONAL DE MEXICO CAM´PUS MILPA ALTA 2</h5>
+      <h1>SEGURIDAD DE LA INFORMACIÓN</h1>
+      <h5>INVESTIGACIÓN DEL TECNOLÓGICO NACIONAL DE MÉXICO CAMPUS MILPA ALTA 2</h5>
+      <img src="./1-1.gif" alt="calavera haker" class="gif-left">
       <p><strong>Publicado:</strong> 24 de septiembre de 2024</p>
     </header>
 
     <section id="consejos" class="mb-5">
-      <h3>Consejos Para Evitar El Robo De Datos Personales</h3>
+      <div class="d-flex align-items-start">
+        <h3>Consejos Para Evitar El Robo De Datos Personales</h3>
+      </div>
       <br>
-      <p>1. Utilice contraseñas seguras y autenticación de dos factores Contraseñas seguras: utilice contraseñas largas que contengan letras mayúsculas y minúsculas, números y símbolos. Autenticación de dos factores (2FA): habilite 2FA cuando sea posible para agregar una capa adicional de seguridad. </p>
-      <p>2. Conexión segura HTTPS: explore solo sitios web que utilicen HTTPS en lugar de HTTP. Esto garantiza que la comunicación entre su navegador y el sitio web esté cifrada. VPN: utilice una red privada virtual (VPN) para cifrar su tráfico y proteger sus datos cuando esté conectado a una red Wi-Fi pública. </p>
-      <p>3. No compartas información personal innecesaria Tenga cuidado con la información que proporciona en su sitio web o aplicación. Proporciona sólo los datos necesarios. No almacene datos confidenciales (como números de tarjetas de crédito) en aplicaciones o sitios web en los que no confíe plenamente. </p>
-      <p>4. Actualizaciones y parches de seguridad Mantenga sus dispositivos actualizados: instale actualizaciones de seguridad para su sistema operativo, navegador y aplicaciones. Los desarrolladores publican actualizaciones para corregir vulnerabilidades de seguridad conocidas, por lo que no actualizar aumenta el riesgo. </p>
-      <p>5. Tenga cuidado con los correos electrónicos y enlaces sospechosos (phishing).No abra correos electrónicos o mensajes de remitentes desconocidos ni haga clic en enlaces o descargas sin verificar su legitimidad. Muchas veces, los ataques de robo de datos se llevan a cabo mediante phishing, donde el atacante se hace pasar por una empresa legítima para obtener sus credenciales. </p>
-      <p>6. Software antivirus y antimalware Utilice el software antivirus y antimalware más reciente para detectar y neutralizar las amenazas antes de que dañen su dispositivo. El software también lo protege de sitios web maliciosos que intentan robar sus datos. </p>
-      <p>7. Verifique los permisos de la aplicación Para aplicaciones móviles, verifique los permisos que requieren. Algunas aplicaciones requieren acceso innecesario a sus datos personales. Limite estos permisos tanto como sea posible. </p>
-      <p>8. Seguimiento de la actividad Supervise periódicamente sus cuentas financieras o servicios que utilicen información confidencial. Si nota alguna actividad inusual, repórtelo inmediatamente. Si cree que su información puede haber sido comprometida, utilice un servicio de monitoreo de crédito. </p>
-      <p>9. Cifrado de datos Para mayor seguridad, puede cifrar los datos en su dispositivo o en un servicio en la nube. Esto garantiza que si alguien obtiene acceso a su mensaje, no podrá leerlo sin la clave de cifrado.</p>
-      <p>10. No confíes en redes abiertas o públicas Evite conectarse a redes Wi-Fi públicas o abiertas sin la protección adecuada (como una VPN), ya que los atacantes pueden interceptar sus datos en estas redes. La implementación de estas prácticas ayudará a reducir el riesgo de robo de datos en línea y protegerá su información personal.</p>
+      <p>1. Utiliza contraseñas seguras y habilita la autenticación de dos factores (2FA) para mayor protección.</p>
+      <p>2. Navega solo en sitios HTTPS y utiliza una VPN en redes públicas para proteger tus datos.</p>
+
+      <img src="./1.jpg" alt="Descripción de la imagen" style="float: right; margin-left: 10px; margin-bottom: 10px; width: 400px; height: auto; 
+  box-shadow: 0 0 10px 5px rgba(0, 255, 0, 0.7);">
+
+      <p>3. Comparte solo la información personal necesaria y evita almacenar datos confidenciales en sitios no confiables.</p>
+      <p>4. Mantén tus dispositivos actualizados para protegerte de vulnerabilidades de seguridad.</p>
+      <p>5. Desconfía de correos y enlaces sospechosos (phishing) para evitar caer en fraudes.</p>
+      <p>6. Instala software antivirus y antimalware para protegerte de amenazas.</p>
+      <p>7. Revisa los permisos de las aplicaciones móviles y limita el acceso a tus datos personales.</p>
+      <p>8. Supervisa tus cuentas regularmente y reporta actividad inusual.</p>
+      <p>9. Cifra tus datos en dispositivos o servicios en la nube para mayor seguridad.</p>
+      <p>10. Evita redes Wi-Fi públicas sin protección adecuada, como una VPN.</p>
+
 
     </section>
-    <br>
-    <br>
 
-
-    <div class="d-flex justify-content-center">
-        <br>
-        <div class="d-flex justify-content-center">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/OlEHVHXMy_k?autoplay=1&mute=1" 
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-            allowfullscreen></iframe>
-        </div>
-        <br>
+    <div class="d-flex justify-content-center mb-4">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/OlEHVHXMy_k?autoplay=1&mute=1" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen></iframe>
     </div>
     <p class="text-center">Puedes ver el video completo en <a href="https://youtu.be/OlEHVHXMy_k" target="_blank">YouTube</a>.</p>
-    
-      <br>
-      <br>
-      <br>
-      <br>
 
-
-      
-    <footer class="text-center py-3" >
+    <footer class="text-center py-3">
       <div class="container">
         <p>&copy; 2024 Estudio sobre la seguridad de la información</p>
         <p>Autores: Adrián Galicia, Axel Sánchez, Carolina Reyes, Enrique Ontiveros y Antonio Bruno</p>
