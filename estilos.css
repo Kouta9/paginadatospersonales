@@ -6,16 +6,6 @@ html, body {
   flex-direction: column;
 }
 
-/* Contenedor principal que permite el scroll si el contenido es mayor que la pantalla */
-.container {
-  flex: 1;
-  padding-right: 20px;
-  overflow-y: auto; /* Permite el desplazamiento vertical */
-   
-}
-
-
-
 body {
   font-family: 'Arial', sans-serif;
   line-height: 1.6;
